@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <nav className='flex py-5 items-center justify-around'>
+        <nav className='flex py-3 items-center justify-around'>
           <Link className='font-medium text-2xl flex items-center gap-3' href="/">
             <Image
               src="/synz-logo.jpeg"
