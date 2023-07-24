@@ -28,7 +28,7 @@ export default function Navbar() {
                     <Link href="/blog">Blog</Link>
                     <Link href="/events">Events</Link>
                     <Link href="/photos">Photos</Link>
-                    <Link href="/">Contact</Link>
+                    <Link href="#contact">Contact</Link>
                 </div>
             </nav>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
                         <Link className='hover:bg-gray-100' href="/blog">Blog</Link>
                         <Link className='hover:bg-gray-100' href="/events">Events</Link>
                         <Link className='hover:bg-gray-100' href="/photos">Photos</Link>
-                        <Link className='hover:bg-gray-100' href="/">Contact</Link>
+                        <Link className='hover:bg-gray-100' href="#contact">Contact</Link>
                     </div>
                 </nav>
             }

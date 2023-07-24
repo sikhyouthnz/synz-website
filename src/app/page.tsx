@@ -1,8 +1,6 @@
 "use client"
 import SimpleImageSlider from "react-simple-image-slider";
 import { useWindowSize } from "./hooks/useWindowSize";
-import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from "react-icons/ai"
-import Image from "next/image";
 
 export default function Home() {
 
@@ -11,7 +9,6 @@ export default function Home() {
       <ImageComponent />
       <About />
       <PastEvents />
-      <Contact />
     </main>
   )
 }
@@ -92,45 +89,6 @@ const PastEvents = () => {
         Rather than shunning the youths, we try to empower them by actively engaging with them and putting
         their ideas and feedback into action. We are proud of the work we have done in supporting our youths
         in New Zealand to become positive participants in the wider community as well.
-      </div>
-    </div>
-  )
-}
-
-const Contact = () => {
-  const windowSize = useWindowSize()
-
-  let imgSize = { width: 621, height: 414 }
-
-  if (windowSize.width > 1024) {
-    imgSize = { width: 621, height: 414 }
-  }
-
-  let iconSize = 20
-  if (windowSize.width > 768) {
-    iconSize = 30
-  }
-
-  return (
-    <div className="bg-sky-100 text-center py-10 px-5 min-h-[60vh] flex flex-col lg:flex-row gap-10 items-center justify-center">
-      {/* <div className="font-medium text-2xl pb-8">Contact</div> */}
-      <Image src="/contactus.png" alt="contact us image" width={imgSize.width} height={imgSize.height} />
-      <div className="flex flex-row lg:flex-col gap-10 justify-around">
-        <div>
-          <div className="font-medium text-lg md:text-2xl text-left">Follow us on socials</div>
-          <div className="flex gap-3">
-            <AiOutlineInstagram size={iconSize} />
-            <AiOutlineFacebook size={iconSize} />
-            <AiOutlineLinkedin size={iconSize} />
-          </div>
-        </div>
-        <div>
-          <div className="font-medium text-lg md:text-2xl text-left">Contact us</div>
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-3"><AiOutlineMail size={iconSize} /> <a href="mailto:sikhyouthnz@gmail.com">sikhyouthnz@gmail.com</a></div>
-            <AiOutlinePhone size={iconSize} />
-          </div>
-        </div>
       </div>
     </div>
   )
