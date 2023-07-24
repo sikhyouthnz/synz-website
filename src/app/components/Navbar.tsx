@@ -2,18 +2,27 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { useWindowSize } from '../hooks/useWindowSize'
 
 export default function Navbar() {
     const [showMediumWidthNav, setShowMediumWidthNav] = useState(false)
+
+    const windowSize = useWindowSize()
+
+    let logoSize = { width: 40, height: 41 }
+    if (windowSize.width > 768) {
+        logoSize = { width: 53, height: 54 }
+    }
+
     return (
         <div>
             <nav className='flex py-3 items-center justify-around'>
-                <Link className='font-medium text-2xl flex items-center gap-3' href="/">
+                <Link className='font-medium text-lg md:text-2xl flex items-center gap-3' href="/">
                     <Image
                         src="/synz-logo.jpeg"
                         alt="SYNZ Logo"
-                        width={53}
-                        height={54}
+                        width={logoSize.width}
+                        height={logoSize.height}
                     />
                     Sikh Youth New Zealand
                 </Link>
