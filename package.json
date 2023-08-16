@@ -23,5 +23,10 @@
     "react-simple-image-slider": "^2.4.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "frontmatter-markdown-loader": "^3.7.0"
   }
 }
