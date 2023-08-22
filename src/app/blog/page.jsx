@@ -7,7 +7,7 @@ export default function blog() {
   const blogLinks = markdownFiles.map((data) => {
     const link = "/blog/" + data.filename
     return (
-      <Link className='w-full mx-48 my-48 bg-gray-100 hover:bg-gray-200 p-3 rounded-md' key={data.filename} href={link}>
+      <Link className='w-full bg-gray-100 hover:bg-gray-200 p-3 rounded-md' key={data.filename} href={link}>
         <div className='flex justify-between items-center'>
           <div className='font-normal text-2xl'>{data.attributes.title}</div>
           <div className='text-zinc-500'>{data.attributes.date}</div>
@@ -17,7 +17,7 @@ export default function blog() {
     )
   })
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex flex-col gap-3 mx-48 my-48 justify-center items-center'>
       {blogLinks}
     </div>
   )
