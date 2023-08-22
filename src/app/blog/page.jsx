@@ -1,51 +1,37 @@
 "use client"
-// import Head from "next/head"
-// import { Component } from 'react'
-// import { attributes, react as HomeContent } from '../../../content/home.md'
+import Link from 'next/link'
 
 export default function blog() {
   const markdownFiles = getBlogPosts();
-
   const Com = markdownFiles[0].react;
-  console.log(typeof com)
+  const blogLinks = markdownFiles.map((data) => {
+    const link = "/blog/" + data.filename
+    return (
+      <Link className='w-full mx-48 my-48 bg-gray-100 hover:bg-gray-200 p-3 rounded-md' key={data.filename} href={link}>
+        <div className='flex justify-between items-center'>
+          <div className='font-normal text-2xl'>{data.attributes.title}</div>
+          <div className='text-zinc-500'>{data.attributes.date}</div>
+        </div>
+        <div className='text-zinc-600'>{data.attributes.summary}</div>
+      </Link>
+    )
+  })
   return (
-    <>
-      <Com />
-    </>
+    <div className='flex justify-center items-center'>
+      {blogLinks}
+    </div>
   )
 }
 
 const getBlogPosts = () => {
-  const markdownContext = require.context('../../../content/blog', false, /^content\/blog.*\.md$/);
+  const markdownContext = require.context('../../../content/blog', false, /^\.\/.*\.md$/);
   const markdownFiles = markdownContext
-  .keys()
-  .map((filename) => markdownContext(filename))
+    .keys()
+    .map((filename) => {
+      const blogData = markdownContext(filename)
+      blogData.filename = filename.slice(2, -3)
+      return blogData
+    })
 
   return markdownFiles;
 }
-
-// export default class Home extends Component {
-//   render() {
-//     const mdFiles = require.co
-//     let { title, cats } = attributes
-//     return (
-//       <>
-//         <Head>
-//           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
-//         </Head>
-//         <article>
-//           <h1>{title}</h1>
-//           <HomeContent />
-//           <ul>
-//             {cats.map((cat, k) => (
-//               <li key={k}>
-//                 <h2>{cat.name}</h2>
-//                 <p>{cat.description}</p>
-//               </li>
-//             ))}
-//           </ul>
-//         </article>
-//       </>
-//     )
-//   }
-// }
