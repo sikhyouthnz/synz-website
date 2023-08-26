@@ -18,16 +18,18 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
+    - label: "Events"
+      name: "events"
+      file: "content/events.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
         - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
+        - label: 'Events'
+          name: "events"
           widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
+            - { label: "Date", name: "date", widget: "datetime"}
+            - { label: "Image", name: "image", widget: "image"}

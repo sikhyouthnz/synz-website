@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className='text-xl gap-5 font-normal hidden md:flex'>
                     <Link href="/blog">Blog</Link>
                     <Link href="/events">Events</Link>
-                    <Link href="/photos">Photos</Link>
+                    {/* <Link href="/photos">Photos</Link> */}
                     <Link href="#contact">Contact</Link>
                 </div>
             </nav>
