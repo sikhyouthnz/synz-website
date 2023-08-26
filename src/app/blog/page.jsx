@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 export default function blog() {
   const markdownFiles = getBlogPosts();
-  const Com = markdownFiles[0].react;
   const blogLinks = markdownFiles.map((data) => {
     const link = "/blog/" + data.filename
     return (
