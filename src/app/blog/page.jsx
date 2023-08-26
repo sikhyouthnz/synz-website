@@ -17,8 +17,11 @@ export default function blog() {
     )
   })
   return (
-    <div className='flex flex-col gap-3 mx-48 my-48 justify-center items-center'>
-      {blogLinks}
+    <div className='flex flex-col gap-3 mx-4 md:mx-36 lg:mx-48 my-5'>
+      <div className='text-3xl'>Blog</div>
+      <div className='flex flex-col gap-3 my-4 md:my-36'>
+        {blogLinks}
+      </div>
     </div>
   )
 }
