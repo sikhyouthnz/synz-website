@@ -15,16 +15,13 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
+  - name: "events"
+    label: "Events"
     files:
     - label: "Events"
       name: "events"
       file: "content/events.md"
       fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "date" }
-        - { label: "Body", name: "body", widget: "markdown"}
         - label: 'Events'
           name: "events"
           widget: list
@@ -32,5 +29,5 @@ collections:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
             - { label: "Date", name: "date", widget: "datetime"}
-            - { label: "Image", name: "image", widget: "image"}
+            - { label: "Image", name: "image", widget: "image", optional: true}
             - { label: "Venue", name: "venue", widget: "string" }
