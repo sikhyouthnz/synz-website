@@ -15,6 +15,20 @@ export default function blog() {
       </Link>
     )
   })
+
+  console.log(blogLinks)
+
+  if (blogLinks.length == 0) {
+    return (
+      <div className='flex flex-col gap-3 mx-4 md:mx-36 lg:mx-48 my-5'>
+        <div className='text-3xl'>Blog</div>
+        <div className='flex flex-col gap-3 my-24 md:my-36'>
+          Blogs coming soon.
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className='flex flex-col gap-3 mx-4 md:mx-36 lg:mx-48 my-5'>
       <div className='text-3xl'>Blog</div>
