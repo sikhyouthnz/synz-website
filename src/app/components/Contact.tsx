@@ -26,16 +26,15 @@ export default function Contact() {
                 <div>
                     <div className="font-medium text-lg md:text-2xl text-left">Follow us on socials</div>
                     <div className="flex gap-3">
-                        <AiOutlineInstagram size={iconSize} />
-                        <AiOutlineFacebook size={iconSize} />
-                        <AiOutlineLinkedin size={iconSize} />
+                        <a href="https://www.instagram.com/sikhyouthnz/"> <AiOutlineInstagram size={iconSize} /> </a>
+                        <a href="https://www.facebook.com/sikhyouthnz/"> <AiOutlineFacebook size={iconSize}/> </a>
+                        <a href="https://www.linkedin.com/company/sikh-youth-nz-cc54981/"> <AiOutlineLinkedin size={iconSize} /> </a>
                     </div>
                 </div>
                 <div>
                     <div className="font-medium text-lg md:text-2xl text-left">Contact us</div>
                     <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-3"><AiOutlineMail size={iconSize} /> <a href="mailto:sikhyouthnz@gmail.com">sikhyouthnz@gmail.com</a></div>
-                        <AiOutlinePhone size={iconSize} />
                     </div>
                 </div>
             </div>
