@@ -45,7 +45,7 @@ export default function Navbar() {
                     <div className='flex flex-col text-center text-lg'>
                         <Link className='hover:bg-gray-100' href="/blog">Blog</Link>
                         <Link className='hover:bg-gray-100' href="/events">Events</Link>
-                        <Link className='hover:bg-gray-100' href="#contact">Contact</Link>
+                        <Link className='hover:bg-gray-100' href="#contact"><a>Contact</a></Link>
                     </div>
                 </nav>
             }
