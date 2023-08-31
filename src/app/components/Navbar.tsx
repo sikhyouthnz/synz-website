@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className='text-xl gap-5 font-normal hidden md:flex'>
                     <Link href="/blog">Blog</Link>
                     <Link href="/events">Events</Link>
-                    <Link href="#contact" scroll={false}>Contact</Link>
+                    <Link href="#contact" scroll={false}><a>Contact</a></Link>
                 </div>
             </nav>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
                     <div className='flex flex-col text-center text-lg'>
                         <Link className='hover:bg-gray-100' href="/blog">Blog</Link>
                         <Link className='hover:bg-gray-100' href="/events">Events</Link>
-                        <Link className='hover:bg-gray-100' href="#contact"><a>Contact</a></Link>
+                        <Link className='hover:bg-gray-100' scroll={false} href="#contact"><a>Contact</a></Link>
                     </div>
                 </nav>
             }
