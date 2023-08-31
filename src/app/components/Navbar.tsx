@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className='text-xl gap-5 font-normal hidden md:flex'>
                     <Link href="/blog">Blog</Link>
                     <Link href="/events">Events</Link>
-                    <div onClick={scrollToBottom}>Contact</div>
+                    <div className='cursor-pointer' onClick={scrollToBottom}>Contact</div>
                 </div>
             </nav>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
                     <div className='flex flex-col text-center text-lg'>
                         <Link className='hover:bg-gray-100' href="/blog">Blog</Link>
                         <Link className='hover:bg-gray-100' href="/events">Events</Link>
-                        <div className='hover:bg-gray-100' onClick={scrollToBottom}>Contact</div>
+                        <div className='hover:bg-gray-100 cursor-pointer' onClick={scrollToBottom}>Contact</div>
                     </div>
                 </nav>
             }
