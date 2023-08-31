@@ -36,7 +36,6 @@ export default function Navbar() {
                 <div className='text-xl gap-5 font-normal hidden md:flex'>
                     <Link href="/blog">Blog</Link>
                     <Link href="/events">Events</Link>
-                    {/* <Link href="/photos">Photos</Link> */}
                     <Link href="#contact">Contact</Link>
                 </div>
             </nav>
@@ -46,7 +45,6 @@ export default function Navbar() {
                     <div className='flex flex-col text-center text-lg'>
                         <Link className='hover:bg-gray-100' href="/blog">Blog</Link>
                         <Link className='hover:bg-gray-100' href="/events">Events</Link>
-                        <Link className='hover:bg-gray-100' href="/photos">Photos</Link>
                         <Link className='hover:bg-gray-100' href="#contact">Contact</Link>
                     </div>
                 </nav>

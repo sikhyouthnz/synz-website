@@ -40,14 +40,17 @@ export default function blog() {
 }
 
 const getBlogPosts = () => {
-  const markdownContext = require.context('../../../content/blog', false, /^\.\/.*\.md$/);
-  const markdownFiles = markdownContext
-    .keys()
-    .map((filename) => {
-      const blogData = markdownContext(filename)
-      blogData.filename = filename.slice(2, -3)
-      return blogData
-    })
-
-  return markdownFiles;
+  try {
+    const markdownContext = require.context('../../../content/blog', false, /^\.\/.*\.md$/);
+    const markdownFiles = markdownContext
+      .keys()
+      .map((filename) => {
+        const blogData = markdownContext(filename)
+        blogData.filename = filename.slice(2, -3)
+        return blogData
+      })
+    return markdownFiles;
+  } catch (e) {
+    return []
+  }
 }
