@@ -9,8 +9,8 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'SYNZ',
-  description: 'Sikh Youth New Zealand Website',
+  title: 'Sikh Youth NZ',
+  description: 'SYNZ: Empowering Sikh Youth in New Zealand',
 }
 
 export default function RootLayout({
