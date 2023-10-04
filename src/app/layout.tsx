@@ -9,7 +9,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Sikh Youth NZ',
+  title: 'SYNZ - Sikh Youth New Zealand',
   description: 'SYNZ: Empowering Sikh Youth in New Zealand',
 }
 
