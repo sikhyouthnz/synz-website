@@ -24,7 +24,7 @@ export default function Contact() {
             <Image src="/contactus.png" alt="contact us image" width={imgSize.width} height={imgSize.height} />
             <div className="flex flex-row lg:flex-col gap-10 justify-around">
                 <div>
-                    <div className="font-medium text-lg md:text-2xl text-left">Follow us on socials</div>
+                    <div className="font-medium text-base md:text-2xl text-left">Follow us on socials</div>
                     <div className="flex gap-3">
                         <a href="https://www.instagram.com/sikhyouthnz/"> <AiOutlineInstagram size={iconSize} /> </a>
                         <a href="https://www.facebook.com/sikhyouthnz/"> <AiOutlineFacebook size={iconSize}/> </a>
@@ -32,9 +32,9 @@ export default function Contact() {
                     </div>
                 </div>
                 <div>
-                    <div className="font-medium text-lg md:text-2xl text-left">Contact us</div>
+                    <div className="font-medium text-base md:text-2xl text-left">Contact us</div>
                     <div className="flex flex-col gap-3">
-                        <div className="flex items-center gap-3"><AiOutlineMail size={iconSize} /> <a href="mailto:sikhyouthnz@gmail.com">sikhyouthnz@gmail.com</a></div>
+                        <div className="text-sm md:text-base flex items-center gap-3"><AiOutlineMail size={iconSize} /> <a href="mailto:sikhyouthnz@gmail.com">sikhyouthnz@gmail.com</a></div>
                     </div>
                 </div>
             </div>
