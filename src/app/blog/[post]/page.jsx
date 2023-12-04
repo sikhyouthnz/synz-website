@@ -9,7 +9,7 @@ export default function Page({ params }) {
                 <div className="font-medium text-lg text-gray-500">{markdownContext.attributes.date}</div>
                 <div className="font-normal text-lg text-gray-600 text-center">{markdownContext.attributes.summary}</div>
             </div>
-            <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10"></hr>
+            <hr className="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10"></hr>
             <Content />
         </div>
     )
