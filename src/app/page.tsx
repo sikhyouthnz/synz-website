@@ -54,7 +54,7 @@ const ImageComponent = () => {
           Empower the future
         </div>
         <div className="max-w-2xl text-2xl font-medium text-gray-500">
-          Supporting and encouraging Sikh youths
+          An inclusive national youth-led platform enriching and supporting the lives of  Sikh youths of New Zealand
         </div>
       </div>
       <ImageSlider />
@@ -80,15 +80,15 @@ const About = () => {
 
 const PastEvents = () => {
   return (
-    <div className="text-center min-h-[60vh] py-10 px-5 md:p-0 flex flex-col items-center justify-center">
+    <div className="text-left min-h-[60vh] py-10 px-5 md:p-0 flex flex-col items-center justify-center">
       <div className="font-medium text-2xl pb-8">Mission Statement</div>
       <div className="max-w-2xl text-xl font-light">
-        SYNZ’s mission is to empower and provide a safe space for Sikh youths in New Zealand. We
-        do so by fostering and strengthening the Sikh identity with an emphasis on the Sikh Guru’s
-        teachings. We offer a safe space for youths to discuss and involve themselves in the community.
-        Rather than shunning the youths, we try to empower them by actively engaging with them and putting
-        their ideas and feedback into action. We are proud of the work we have done in supporting our youths
-        in New Zealand to become positive participants in the wider community as well.
+        <ul className="list-disc">
+          <li>Providing a support network that cultivates an awareness and interest in  the culture, identity, faith, and community of Sikh youths.</li>
+          <li>Align our programs, operations and management with the principles of Sikhi.</li>
+          <li>Collaborate and support other organisations that share the values of Sikh Youth New Zealand.</li>
+          <li>Innovating modern and practical approaches to engage Sikh youths.</li>
+        </ul>
       </div>
     </div>
   )
