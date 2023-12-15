@@ -9,4 +9,9 @@ events:
       We're excited to announce the upcoming 2023 Kirtan Diwan at North Shore Gurudwara. Please join us as sangat and kirtanis for a blissful night of Gurbani. Signup through the QR code or message our social media pages.
     image: img/370846665_828002405458384_5803130861769621600_n.jpg
     venue: 128 Sunnybrae Road, Hillcrest, Auckland 0627
+  - date: 2024-01-25T18:30:00.000Z
+    name: SYNZ Summer Camp - 2024
+    description: Register now for the 2024 Summer Camp
+    image: img/407240309_1324324684751867_4641182256839867906_n.jpg
+    venue: YMCA Camp Adair, 2487 Hunua Road, Hunua
 ---
