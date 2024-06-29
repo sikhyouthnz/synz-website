@@ -12,7 +12,7 @@ Wah! What a blissful night it was! Last year SYNZ held its annual kirtan functio
 
 Despite having taken part in SYNZ diwans for the past few years, I was blessed with the opportunity to organize the 2023 Diwan. Luckily enough for myself, the program turned out to be a banger, and we saw many amazing talents sing on stage. The SYNZ kirtan diwan serves to promote sikh practices and values of which devotional singing is an integral element. Within Gurbani, there are countless references of the importance of singing kirtan. In describing the state of a Gurmukh (One who faces the Guru), Guru Amar Das ji writes:
 
-ਹਰਿ ਗੁਣ <span style="color:#F28C28;">ਗਾਵਹਿ</span> ਹਰਿ ਨਿਤ <span style="color:#097969;">ਪੜਹਿ</span> ਹਰਿ ਗੁਣ ਗਾਇ ਸਮਾਇ ॥\
+ਹਰਿ ਗੁਣ ਗਾਵਹਿ ਹਰਿ ਨਿਤ ਪੜਹਿ ਹਰਿ ਗੁਣ ਗਾਇ ਸਮਾਇ ॥\
 Har gun gaaveh har nit paReh har gun gai samai ||\
 They sing of the qualities of the Divine; they read about the divine. Singing the Praise of the Lord, they merge in absorption.
 
@@ -20,7 +20,7 @@ One thing that I have noticed is that by providing a youth specific stage, young
 
 Alas, as all good things must come to an end, the program ended with a ‘prize giving’ to all the participants. Despite only running for a few hours we saw amazing feedback from the Sangat for the encouragement of Gurbani Kirtan. Many came and suggested that one diwan a year is far from enough, that more should be held in the coming years. Overall, the program serves more than just providing empowerment for young people. It provides them the opportunity to see others from the same age group sing and encourages them interaction and inspiration. I truly cannot wait for the 2024 Youth Kirtan Diwan to happen!
 
-ਸਚਾ ਖਸਮੁ <span style="color:#F28C28;">ਕਲਾਣਿ</span> ਕਮਲੁ ਵਿਗਸਿਆ ॥\
+ਸਚਾ ਖਸਮੁ ਕਲਾਣਿ ਕਮਲੁ ਵਿਗਸਿਆ ॥\
 sachaa khasam kalaan kamal vigasiaa ||\
 Singing the Praises of their True Lord and Master, the lotuses of their hearts have blossomed forth.\
 Raag Maajh- Guru Angad Dev Ji Ang- 148
