@@ -4,6 +4,8 @@ title: SYNZ Youth Kirtan Blog
 date: 2024-06-29T02:12:47.016Z
 summary: SYNZ Youth Kirtan Diwan 2023
 ---
+![](img/synz_kirtna1.jpg)
+
 Wah! What a blissful night it was! Last year SYNZ held its annual kirtan function at North Shore Gurdwara Sahib with the blessings of Akaal Purakh. The kirtan program is a part of greater the SYNZ initiative to encourage Sikh youths in New Zealand to engage with Gurbani, Sangeet and Sangat. These three elements lay an important foundation in the Sikh lifestyle. To break this down: 
 
 1. Gurbani being the poetic writings of the Sikh Gurus, and Bhagats. 
