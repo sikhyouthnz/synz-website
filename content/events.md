@@ -14,4 +14,9 @@ events:
     description: Register now for the 2024 Summer Camp
     image: img/407240309_1324324684751867_4641182256839867906_n.jpg
     venue: YMCA Camp Adair, 2487 Hunua Road, Hunua
+  - date: 2024-06-29T02:43:26.464Z
+    name: SYNZ Winter Camp 2024
+    description: Register now for the 2024 winter camp.
+    venue: 90-142 Connaught Street, Blockhouse Bay, Auckland 0600 Camp Motu Moana
+    image: img/image.png
 ---
