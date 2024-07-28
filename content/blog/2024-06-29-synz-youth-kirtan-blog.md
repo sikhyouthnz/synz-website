@@ -6,13 +6,13 @@ summary: SYNZ Youth Kirtan Diwan 2023
 ---
 ![](/img/synz_kirtna1.jpg)
 
-Wah! What a blissful night it was! Last year SYNZ held its annual kirtan function at North Shore Gurdwara Sahib with the blessings of Akaal Purakh. The kirtan program is a part of greater the SYNZ initiative to encourage Sikh youths in New Zealand to engage with Gurbani, Sangeet and Sangat. These three elements lay an important foundation in the Sikh lifestyle. To break this down: 
+Wah! What a blissful night it was! Last year SYNZ held its annual kirtan function at North Shore Gurdwara Sahib with the blessings of Akaal Purakh. The kirtan program is a part of the greater SYNZ initiative to encourage Sikh youths in New Zealand to engage with Gurbani, Sangeet and Sangat. These three elements lay an important foundation in the Sikh lifestyle. To break this down: 
 
 1. Gurbani being the poetic writings of the Sikh Gurus, and Bhagats. 
 2. Sangeet refers to the musical setting of Indian music. 
 3. Sangat refers to the congregation.
 
-Despite having taken part in SYNZ diwans for the past few years, I was blessed with the opportunity to organize the 2023 Diwan. Luckily enough for myself, the program turned out to be a banger, and we saw many amazing talents sing on stage. The SYNZ kirtan diwan serves to promote sikh practices and values of which devotional singing is an integral element. Within Gurbani, there are countless references of the importance of singing kirtan. In describing the state of a Gurmukh (One who faces the Guru), Guru Amar Das ji writes:
+Despite having taken part in SYNZ diwans for the past few years, I was blessed with the opportunity to organize the 2023 program. Luckily enough for myself, the program turned out to be a banger, and we saw many amazing talents sing on stage. The SYNZ kirtan diwan serves to promote sikh practices and values of which devotional singing is an integral element. Within Gurbani, there are countless references of the importance of singing kirtan. In describing the state of a Gurmukh (One who faces the Guru), Guru Amar Das ji writes:
 
 ਹਰਿ ਗੁਣ <Orange>ਗਾਵਹਿ</Orange> ਹਰਿ ਨਿਤ <Green>ਪੜਹਿ</Green> ਹਰਿ ਗੁਣ ਗਾਇ ਸਮਾਇ ॥\
 Har gun gaaveh har nit paReh har gun gai samai ||\
