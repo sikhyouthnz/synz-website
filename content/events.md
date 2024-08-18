@@ -19,4 +19,12 @@ events:
     description: Register now for the 2024 winter camp.
     venue: 90-142 Connaught Street, Blockhouse Bay, Auckland 0600 Camp Motu Moana
     image: img/image.png
+  - date: 2024-09-28T05:30:00.000Z
+    name: Sikh Youth Kirtan Diwan - 2024
+    description: >-
+      Sikh Youth Kirtan Diwan - 2024
+
+      We're excited to announce the upcoming 2024 Kirtan Diwan. Please join us as sangat and kirtanis for a blissful night of Gurbani. Signup through the QR code or message our social media pages.
+    image: /img/7efd5852-032f-41b9-8a33-d857b2ebca37.jpeg
+    venue: 24 Dunnotar Road, Papatoetoe, Auckland 2025
 ---
