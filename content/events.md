@@ -27,4 +27,9 @@ events:
       We're excited to announce the upcoming 2024 Kirtan Diwan. Please join us as sangat and kirtanis for a blissful night of Gurbani. Signup through the QR code or message our social media pages.
     image: /img/7efd5852-032f-41b9-8a33-d857b2ebca37.jpeg
     venue: 24 Dunnotar Road, Papatoetoe, Auckland 2025
+  - date: 2025-01-24T05:30:06.041Z
+    name: SYNZ Summer Camp - 2025
+    description: Register now for the 2025 Summer Camp
+    image: /img/3fee85f1-8b9d-41c7-8bfb-ad9c04b0061c.png
+    venue: Motu Moana Camp, 90-142 Connaught Street, Blockhouse Bay
 ---
