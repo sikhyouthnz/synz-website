@@ -51,7 +51,7 @@ const ImageComponent = () => {
     <div className="flex justify-center items-center pt-10 gap-12 flex-col md:p-10 xl:flex-row">
       <div className="flex flex-col pl-10 gap-6">
         <div className="max-w-2xl text-6xl font-extrabold text-blue-500">
-          Empower the future
+          Empowering the future
         </div>
         <div className="max-w-2xl text-2xl font-medium text-gray-500">
           An inclusive national youth-led platform enriching and supporting the lives of  Sikh youths of New Zealand
