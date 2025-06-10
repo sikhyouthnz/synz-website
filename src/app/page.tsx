@@ -47,6 +47,15 @@ const ImageSlider = () => {
 }
 
 const ImageComponent = () => {
+  const handleMouseOver = (e) => {
+    e.target.style.textDecoration = 'underline';
+  };
+
+  const handleMouseOut = (e) => {
+    e.target.style.fontWeight = 'normal';
+    e.target.style.textDecoration = 'none';
+  };
+
   return (
     <div className="flex justify-center items-center pt-10 gap-12 flex-col md:p-10 xl:flex-row">
       <div className="flex flex-col pl-10 gap-6">
@@ -54,7 +63,16 @@ const ImageComponent = () => {
           Empowering the future
         </div>
         <div className="max-w-2xl text-2xl font-medium text-gray-500">
-          An inclusive national youth-led platform enriching and supporting the lives of  Sikh youths of New Zealand
+          An inclusive national youth-led platform enriching and supporting the lives of Sikh youths of New Zealand
+        </div>
+        <div>
+          Winter camp tickets out now! Register here:<span> </span>
+          <a
+            href="https://events.humanitix.com/synz-winter-camp-2025"
+            style={{ color: 'blue', textDecoration: 'none', fontWeight: 'normal' }}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          >https://events.humanitix.com/synz-winter-camp-2025</a>
         </div>
       </div>
       <ImageSlider />
