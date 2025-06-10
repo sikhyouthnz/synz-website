@@ -47,11 +47,11 @@ const ImageSlider = () => {
 }
 
 const ImageComponent = () => {
-  const handleMouseOver = (e) => {
+  const handleMouseOver = (e:any) => {
     e.target.style.textDecoration = 'underline';
   };
 
-  const handleMouseOut = (e) => {
+  const handleMouseOut = (e:any) => {
     e.target.style.fontWeight = 'normal';
     e.target.style.textDecoration = 'none';
   };
