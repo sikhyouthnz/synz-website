@@ -34,8 +34,7 @@ events:
     venue: Motu Moana Camp, 90-142 Connaught Street, Blockhouse Bay
   - date: 2025-07-04T06:34:29.149Z
     name: SYNZ Leadership Camp 2025
-    description: Register now for the 2025 Leadership Camp.
-      https://events.humanitix.com/synz-winter-camp-2025
+    description: "Register now for the 2025 Leadership Camp. "
     image: /img/whatsapp-image-2025-06-10-at-6.32.26-pm.jpeg
     venue: YMCA Camp Adair, Hunua Falls, Auckland
 ---
