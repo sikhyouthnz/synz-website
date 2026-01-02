@@ -68,11 +68,11 @@ const ImageComponent = () => {
         <div>
           Winter camp tickets out now! Register here:<span> </span>
           <a
-            href="https://events.humanitix.com/synz-winter-camp-2025"
+            href="https://events.humanitix.com/synz-summer-camp-2026"
             style={{ color: 'blue', textDecoration: 'none', fontWeight: 'normal' }}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-          >https://events.humanitix.com/synz-winter-camp-2025</a>
+          >https://events.humanitix.com/synz-summer-camp-2026</a>
         </div>
       </div>
       <ImageSlider />
