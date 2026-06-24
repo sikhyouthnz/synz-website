@@ -66,13 +66,13 @@ const ImageComponent = () => {
           An inclusive national youth-led platform enriching and supporting the lives of Sikh youths of New Zealand
         </div>
         <div>
-          Winter camp tickets out now! Register here:<span> </span>
+          Leadership retreat tickets out now! Register here:<span> </span>
           <a
-            href="https://events.humanitix.com/synz-summer-camp-2026"
+            href="https://events.humanitix.com/synz-leadership-retreat-2026"
             style={{ color: 'blue', textDecoration: 'none', fontWeight: 'normal' }}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-          >https://events.humanitix.com/synz-summer-camp-2026</a>
+          >events.humanitix.com/synz-leadership-retreat-2026</a>
         </div>
       </div>
       <ImageSlider />
