@@ -1,20 +1,55 @@
+import Link from 'next/link'
+
 export default function Page({ params }) {
-    const markdownContext = require('../../../../content/blog/' + params.post + '.md');
-    const Content = markdownContext.react;
+  const markdownContext = require('../../../../content/blog/' + params.post + '.md')
+  const Content = markdownContext.react
+  const { title, date, author } = markdownContext.attributes
 
-    const Orange = ({children}) => <span style={{color: "#F28C28"}}>{children}</span>
-    const Green = ({children}) => <span style={{color: "#097969"}}>{children}</span>
+  // Inline colour helpers used inside the Gurbani quotations
+  const Orange = ({ children }) => <span style={{ color: '#CE5A0C' }}>{children}</span>
+  const Green = ({ children }) => <span style={{ color: '#097969' }}>{children}</span>
 
-    return (
-        <div className="p-7 md:px-60 text-lg flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-center items-center gap-3">
-                <div className="font-medium text-3xl">{markdownContext.attributes.title}</div>
-                <div className="font-normal text-slate-900 text-xl">- Hao-Wei Hsu</div> 
-            </div>
-            <hr className="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10"></hr>
-            <div className="prose lg:prose-xl">
-                <Content Orange={Orange} Green={Green} />
-            </div>
-        </div>
-    )
+  return (
+    <article className="shell py-16 sm:py-24">
+      <Link
+        href="/blog"
+        className="group inline-flex items-center gap-2 text-sm text-ink-mute transition-colors hover:text-ink"
+      >
+        <span className="transition-transform duration-200 group-hover:-translate-x-1" aria-hidden>
+          &larr;
+        </span>
+        All posts
+      </Link>
+
+      <header className="mx-auto mt-12 max-w-prose text-center">
+        <p className="text-sm text-ink-mute">
+          {formatDate(date)}
+          {author ? ` · ${author}` : ''}
+        </p>
+        <h1 className="mt-4 font-display text-4xl leading-[1.05] tracking-tighter text-balance sm:text-5xl lg:text-6xl">
+          {title}
+        </h1>
+        <div className="mx-auto mt-10 h-px w-16 bg-saffron-400" />
+      </header>
+
+      <div
+        className="prose prose-lg mx-auto mt-14 max-w-prose
+          prose-headings:font-display prose-headings:tracking-tight prose-headings:font-normal
+          prose-p:text-ink-soft prose-p:leading-relaxed
+          prose-li:text-ink-soft
+          prose-strong:text-ink
+          prose-a:text-saffron-700 prose-a:underline-offset-4
+          prose-img:rounded-xl prose-img:border prose-img:border-line prose-img:shadow-soft
+          prose-blockquote:border-l-saffron-400 prose-blockquote:not-italic prose-blockquote:text-ink"
+      >
+        <Content Orange={Orange} Green={Green} />
+      </div>
+    </article>
+  )
+}
+
+const formatDate = (value) => {
+  const parsed = new Date(value)
+  if (Number.isNaN(parsed.getTime())) return value
+  return parsed.toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })
 }
