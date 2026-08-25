@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --font-sans: system-ui;
-    --font-display: Georgia;
-  }
-
+  /*
+   * Don't define --font-sans / --font-display here. next/font sets them on a
+   * class it puts on <html>, which has the same specificity as :root — so
+   * whichever rule lands later in the bundle wins, and that ordering differed
+   * between dev and the production build. The font-family stacks in the
+   * Tailwind config already carry their own fallbacks.
+   */
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
