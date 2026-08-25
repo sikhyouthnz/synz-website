@@ -2,12 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --font-sans: system-ui;
+    --font-display: Georgia;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-feature-settings: 'kern', 'liga', 'calt';
+  }
+
+  ::selection {
+    @apply bg-saffron-200 text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-azure-500 ring-offset-2 ring-offset-paper rounded-sm;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+@layer components {
+  /* Page gutters, consistent across every route */
+  .shell {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10;
+  }
+
+  /* Small uppercase section label with a leading rule */
+  .eyebrow {
+    @apply flex items-center gap-3 text-xs font-medium uppercase tracking-[0.18em] text-ink-mute;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-saffron-400;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-paper hover:bg-saffron-600 hover:shadow-soft;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-transparent text-ink hover:border-ink hover:bg-white;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-white transition-all duration-300;
+  }
+  .card-interactive {
+    @apply card hover:-translate-y-1 hover:border-saffron-200 hover:shadow-lift;
+  }
+
+  /* Underline that wipes in from the left on hover */
+  .link-wipe {
+    @apply relative inline-block;
+  }
+  .link-wipe::after {
+    content: '';
+    @apply absolute -bottom-0.5 left-0 h-px w-full origin-right scale-x-0 bg-current transition-transform duration-300;
+  }
+  .link-wipe:hover::after {
+    @apply origin-left scale-x-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  /* Hairline grid backdrop used behind the hero */
+  .bg-grid {
+    background-image: linear-gradient(to right, rgba(23, 19, 16, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(23, 19, 16, 0.045) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
 }
