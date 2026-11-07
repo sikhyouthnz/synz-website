@@ -4,8 +4,6 @@ import Slideshow from './components/Slideshow'
 import Reveal from './components/Reveal'
 import { formatEventDate, getEvents } from './lib/events'
 
-const RETREAT_URL = 'https://events.humanitix.com/synz-leadership-retreat-2026'
-
 export default function Home() {
   return (
     <>
@@ -54,10 +52,6 @@ const Hero = () => (
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <a href={RETREAT_URL} target="_blank" rel="noreferrer" className="btn-primary">
-            Register for the retreat
-            <span aria-hidden>&rarr;</span>
-          </a>
           <Link href="/events" className="btn-ghost">
             See our events
           </Link>
