@@ -24,13 +24,13 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sikhyouth.nz'),
   title: {
-    default: 'SYNZ — Sikh Youth New Zealand',
+    default: 'SYNZ · Sikh Youth New Zealand',
     template: '%s · SYNZ',
   },
   description:
-    "SYNZ is a registered charity empowering Sikh youths in New Zealand. Annual camps, kirtan diwans, career guidance, mental health talks and more — an inclusive, youth-led national platform.",
+    "SYNZ is a registered charity empowering Sikh youths in New Zealand. Annual retreats, kirtan diwans, career guidance, mental health talks and more. An inclusive, youth-led national platform.",
   openGraph: {
-    title: 'SYNZ — Sikh Youth New Zealand',
+    title: 'SYNZ · Sikh Youth New Zealand',
     description:
       'An inclusive national youth-led platform enriching and supporting the lives of Sikh youths of New Zealand.',
     type: 'website',

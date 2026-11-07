@@ -13,6 +13,7 @@ export default function Home() {
       <Mission />
       <Programmes />
       <RecentEvents />
+      <Support />
     </>
   )
 }
@@ -41,14 +42,14 @@ const Hero = () => (
         </Link>
 
         <h1 className="mt-8 font-display text-[3.25rem] leading-[0.95] tracking-tighter text-balance sm:text-7xl lg:text-[5.25rem]">
-          Empowering
+          By the youth,
           <br />
-          the <span className="italic text-saffron-600">future</span>
+          for the <span className="italic text-saffron-600">youth</span>
         </h1>
 
         <p className="mt-7 max-w-lg text-lg leading-relaxed text-pretty text-ink-soft sm:text-xl">
-          An inclusive national youth-led platform enriching and supporting the lives of Sikh
-          youths of New Zealand.
+          A national youth-led organisation uniting the Sikh youths of Aotearoa New Zealand
+          whilst enriching their lives.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -73,7 +74,7 @@ const Hero = () => (
 const facts = [
   { value: 'Registered', label: 'charity organisation' },
   { value: 'Youth-led', label: 'by young Sikhs, for young Sikhs' },
-  { value: 'Two camps', label: 'every single year' },
+  { value: 'Two retreats', label: 'every single year' },
   { value: 'Nationwide', label: 'across New Zealand' },
 ]
 
@@ -105,21 +106,22 @@ const About = () => (
 
       <Reveal>
         <p className="max-w-3xl font-display text-3xl leading-[1.2] tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
-          SYNZ is a registered charity dedicated to the empowerment of Sikh youths in New Zealand.
+          We&apos;re a registered charity built on a simple idea: young Sikhs in New Zealand do
+          better when they have each other.
         </p>
 
         <div className="mt-10 grid max-w-3xl gap-6 text-lg leading-relaxed text-pretty text-ink-soft sm:grid-cols-2 sm:gap-10">
           <p>
-            Throughout its tenure, SYNZ has organised multiple social and religious events on an
-            annual basis, including two annual camps. As an organisation dedicated to young Sikhs,
-            SYNZ considers the well-being of Sikh youths in New Zealand as a core operational
-            motivation.
+            Two retreats a year, kirtan diwans, and plenty of smaller gatherings in between.
+            That&apos;s the rhythm of it. People often turn up not knowing anyone and leave with
+            friends they keep. Looking after the wellbeing of young Sikhs isn&apos;t a side project
+            for us; it&apos;s the reason we exist.
           </p>
           <p>
-            Beyond religious events, SYNZ has offered career guidance, mental health talks,
-            investment, and vehicle safety courses. SYNZ has proven itself to be a trusted and
-            multicultural organisation with members from different ethnic backgrounds, truly
-            testifying to the Guru&apos;s message of the unity of humanity.
+            We also run things that have nothing to do with religious events: career guidance,
+            mental health talks, investment workshops and vehicle safety courses. Our members come
+            from different ethnic backgrounds, which feels right for an organisation that takes the
+            Guru&apos;s message of the unity of humanity seriously.
           </p>
         </div>
       </Reveal>
@@ -164,8 +166,8 @@ const Mission = () => (
 
 const programmes = [
   {
-    title: 'Annual camps',
-    body: 'Summer, winter and leadership camps bringing young Sikhs together for a few days of sangat, learning and fun.',
+    title: 'Annual retreats',
+    body: 'Summer, winter and leadership retreats bringing young Sikhs together for a few days of sangat, learning and fun.',
   },
   {
     title: 'Kirtan diwans',
@@ -181,7 +183,7 @@ const programmes = [
   },
   {
     title: 'Practical skills',
-    body: 'Investment workshops and vehicle safety courses — the everyday skills that rarely get taught.',
+    body: 'Investment workshops and vehicle safety courses: the everyday skills that rarely get taught.',
   },
   {
     title: 'Community',
@@ -199,9 +201,6 @@ const Programmes = () => (
             More than events
           </h2>
         </div>
-        <Link href="/blog" className="btn-ghost">
-          Read the blog
-        </Link>
       </div>
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -278,3 +277,69 @@ const RecentEvents = () => {
     </section>
   )
 }
+
+
+/* -------------------------------------------------------------------------- */
+
+const Support = () => (
+  <section id="support" className="scroll-mt-24 border-t border-line bg-sand py-24 sm:py-32">
+    <div className="shell grid gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-20">
+      <div>
+        <p className="eyebrow">Support the retreat</p>
+        <h2 className="mt-6 max-w-xl font-display text-4xl leading-[1.05] tracking-tighter text-balance sm:text-5xl">
+          It takes a <span className="italic text-saffron-600">sangat</span>.
+        </h2>
+
+        <div className="mt-6 max-w-prose space-y-4 text-pretty text-ink-soft">
+          <p>
+            For our retreat we are bringing international facilitators whose knowledge and
+            expertise align closely with SYNZ&apos;s values, and who will be most impactful to our
+            sangat.
+          </p>
+          <p>
+            Every contribution, big or small, makes a meaningful difference. The funds raised help
+            us bring these opportunities to life and reduce the financial pressures of organising
+            the retreat for everyone. We would be incredibly grateful for your support.
+          </p>
+          <p>Thank you for your ongoing love, support and seva towards SYNZ.</p>
+        </div>
+      </div>
+
+      <Reveal>
+        <div className="card h-fit p-8 shadow-soft sm:p-10">
+          <h3 className="text-xs font-medium uppercase tracking-[0.18em] text-ink-mute">
+            Donation details
+          </h3>
+
+          <dl className="mt-7 space-y-5">
+            <div>
+              <dt className="text-sm text-ink-mute">Account name</dt>
+              <dd className="mt-1 text-lg">Sikh Youth NZ</dd>
+            </div>
+            <div>
+              <dt className="text-sm text-ink-mute">Account number</dt>
+              <dd className="mt-1 text-xl font-medium tabular-nums tracking-tight">
+                02-0290-0454309-066
+              </dd>
+            </div>
+            <div>
+              <dt className="text-sm text-ink-mute">Reference</dt>
+              <dd className="mt-1 text-lg">Donation</dd>
+            </div>
+          </dl>
+
+          <p className="mt-7 border-t border-line pt-5 text-sm text-ink-soft">
+            For a donation receipt, email{' '}
+            <a
+              href="mailto:sikhyouthnz@gmail.com?subject=Donation%20receipt"
+              className="link-wipe font-medium text-ink"
+            >
+              sikhyouthnz@gmail.com
+            </a>
+            .
+          </p>
+        </div>
+      </Reveal>
+    </div>
+  </section>
+)

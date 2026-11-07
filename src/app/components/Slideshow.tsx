@@ -4,10 +4,10 @@ import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
 
 const images = [
-  { src: '/slider-images/img1.jpeg', alt: 'SYNZ campers gathered around a bonfire' },
-  { src: '/slider-images/img2.jpeg', alt: 'Sikh youth at a SYNZ camp' },
+  { src: '/slider-images/img1.jpeg', alt: 'Young Sikhs gathered around a bonfire at a SYNZ retreat' },
+  { src: '/slider-images/img2.jpeg', alt: 'Sikh youth at a SYNZ retreat' },
   { src: '/slider-images/img3.jpeg', alt: 'A SYNZ group photo' },
-  { src: '/slider-images/img4.jpeg', alt: 'Campers taking part in a SYNZ activity' },
+  { src: '/slider-images/img4.jpeg', alt: 'Attendees taking part in a SYNZ activity' },
   { src: '/slider-images/img5.jpeg', alt: 'SYNZ members together at an event' },
 ]
 

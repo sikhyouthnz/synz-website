@@ -23,15 +23,13 @@ export default function Footer() {
       <div className="shell py-20 sm:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr] lg:gap-20">
           <div>
-            <p className="eyebrow">Get in touch</p>
+            <p className="eyebrow">Contact</p>
             <h2 className="mt-6 max-w-xl font-display text-4xl leading-[1.05] tracking-tighter text-balance sm:text-5xl lg:text-6xl">
-              Come as you are.
-              <br />
-              <span className="italic text-saffron-600">Everyone is welcome.</span>
+              Get in touch.
             </h2>
             <p className="mt-6 max-w-md text-pretty text-ink-soft">
-              Whether you want to join a camp, sing at a diwan, volunteer, or just find out what
-              we&apos;re about — send us a message. We&apos;d love to hear from you.
+              Retreats, kirtan, volunteering, or anything else you want to ask about. Send us a
+              message.
             </p>
 
             <a
@@ -72,19 +70,9 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="link-wipe text-ink-soft hover:text-ink">
-                    Blog
+                  <Link href="/#support" className="link-wipe text-ink-soft hover:text-ink">
+                    Support the retreat
                   </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://events.humanitix.com/synz-leadership-retreat-2026"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link-wipe text-ink-soft hover:text-ink"
-                  >
-                    Register
-                  </a>
                 </li>
               </ul>
             </div>
@@ -126,7 +114,7 @@ export default function Footer() {
               className="h-8 w-8 object-contain mix-blend-multiply"
             />
             <p className="text-sm text-ink-mute">
-              Sikh Youth New Zealand — a registered charity.
+              Sikh Youth New Zealand, a registered charity.
             </p>
           </div>
           <p className="text-sm text-ink-mute">

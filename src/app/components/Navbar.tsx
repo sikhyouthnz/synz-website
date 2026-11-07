@@ -9,7 +9,7 @@ const links = [
   { href: '/#about', label: 'About' },
   { href: '/events', label: 'Events' },
   { href: '/kirtandirectory', label: 'Kirtan Learning Directory' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/#support', label: 'Donate' },
   { href: '/#contact', label: 'Contact' },
 ]
 
@@ -72,14 +72,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://events.humanitix.com/synz-leadership-retreat-2026"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary !px-5 !py-2.5"
-          >
-            Register
-          </a>
         </div>
 
         <button
@@ -126,15 +118,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://events.humanitix.com/synz-leadership-retreat-2026"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary mt-5"
-              onClick={() => setOpen(false)}
-            >
-              Register for the retreat
-            </a>
           </div>
         </div>
       )}

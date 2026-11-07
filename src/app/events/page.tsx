@@ -5,7 +5,7 @@ import { getEvents } from '../lib/events'
 export const metadata: Metadata = {
   title: 'Events',
   description:
-    'Camps, kirtan diwans and gatherings run by Sikh Youth New Zealand — browse the posters and details from every SYNZ event.',
+    'Retreats, kirtan diwans and gatherings run by Sikh Youth New Zealand. Browse the posters and details from every SYNZ event.',
 }
 
 export default function EventsPage() {
@@ -16,11 +16,11 @@ export default function EventsPage() {
       <header className="max-w-2xl">
         <p className="eyebrow">Events</p>
         <h1 className="mt-6 font-display text-5xl leading-[0.95] tracking-tighter text-balance sm:text-6xl lg:text-7xl">
-          Camps, kirtan &amp; everything in between
+          Retreats, kirtan &amp; everything in between
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-pretty text-ink-soft">
-          Two camps a year, an annual kirtan diwan, and plenty in between. Here&apos;s where
-          we&apos;ve gathered — tap any poster to see it full size.
+          Two retreats a year, an annual kirtan diwan, and plenty in between. Here&apos;s where
+          we&apos;ve gathered. Tap any poster to see it full size.
         </p>
       </header>
 
