@@ -64,6 +64,14 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    href="/kirtandirectory"
+                    className="link-wipe text-ink-soft hover:text-ink"
+                  >
+                    Kirtan directory
+                  </Link>
+                </li>
+                <li>
                   <Link href="/blog" className="link-wipe text-ink-soft hover:text-ink">
                     Blog
                   </Link>

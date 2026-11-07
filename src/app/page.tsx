@@ -29,20 +29,18 @@ const Hero = () => (
 
     <div className="shell relative grid items-center gap-14 py-16 sm:py-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
       <div className="animate-fade-up">
-        <a
-          href={RETREAT_URL}
-          target="_blank"
-          rel="noreferrer"
+        <Link
+          href="/kirtandirectory"
           className="group inline-flex items-center gap-2.5 rounded-full border border-line bg-white/80 py-1.5 pl-2 pr-4 text-sm text-ink-soft shadow-sm backdrop-blur transition-colors hover:border-saffron-300"
         >
           <span className="rounded-full bg-saffron-500 px-2.5 py-1 text-xs font-medium text-white">
             New
           </span>
-          <span>Leadership Retreat 2026 tickets are out</span>
+          <span>Kirtan Learning Directory is now available</span>
           <span className="transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden>
             &rarr;
           </span>
-        </a>
+        </Link>
 
         <h1 className="mt-8 font-display text-[3.25rem] leading-[0.95] tracking-tighter text-balance sm:text-7xl lg:text-[5.25rem]">
           Empowering
@@ -62,6 +60,9 @@ const Hero = () => (
           </a>
           <Link href="/events" className="btn-ghost">
             See our events
+          </Link>
+          <Link href="/kirtandirectory" className="btn-ghost">
+            Kirtan Learning Directory
           </Link>
         </div>
       </div>

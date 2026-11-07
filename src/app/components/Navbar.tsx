@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 const links = [
   { href: '/#about', label: 'About' },
   { href: '/events', label: 'Events' },
+  { href: '/kirtandirectory', label: 'Kirtan Learning Directory' },
   { href: '/blog', label: 'Blog' },
   { href: '/#contact', label: 'Contact' },
 ]
@@ -53,7 +54,7 @@ export default function Navbar() {
             priority
             className="h-9 w-9 object-contain mix-blend-multiply sm:h-10 sm:w-10"
           />
-          <span className="flex flex-col leading-none">
+          <span className="flex flex-col leading-none whitespace-nowrap">
             <span className="text-[15px] font-semibold tracking-tight">Sikh Youth</span>
             <span className="text-[15px] font-semibold tracking-tight text-ink-mute transition-colors group-hover:text-saffron-600">
               New Zealand
@@ -61,12 +62,12 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-7 lg:flex">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="link-wipe text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              className="link-wipe whitespace-nowrap text-sm font-medium text-ink-soft transition-colors hover:text-ink"
             >
               {link.label}
             </Link>
@@ -83,7 +84,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="-mr-2 flex h-10 w-10 items-center justify-center rounded-full text-ink transition-colors hover:bg-sand md:hidden"
+          className="-mr-2 flex h-10 w-10 items-center justify-center rounded-full text-ink transition-colors hover:bg-sand lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? 'Close menu' : 'Open menu'}
@@ -112,7 +113,7 @@ export default function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="animate-slide-down border-t border-line bg-paper md:hidden"
+          className="animate-slide-down border-t border-line bg-paper lg:hidden"
         >
           <div className="shell flex flex-col py-4">
             {links.map((link) => (
