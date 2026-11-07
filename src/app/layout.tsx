@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import HashScroll from './components/HashScroll'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -59,6 +60,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <HashScroll />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import HashLink from './HashLink'
 import { useEffect, useState } from 'react'
 
 const links = [
@@ -63,15 +64,18 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="link-wipe whitespace-nowrap text-sm font-medium text-ink-soft transition-colors hover:text-ink"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const Item = link.href.includes('#') ? HashLink : Link
+            return (
+              <Item
+                key={link.href}
+                href={link.href}
+                className="link-wipe whitespace-nowrap text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              >
+                {link.label}
+              </Item>
+            )
+          })}
         </div>
 
         <button
@@ -108,16 +112,19 @@ export default function Navbar() {
           className="animate-slide-down border-t border-line bg-paper lg:hidden"
         >
           <div className="shell flex flex-col py-4">
-            {links.map((link) => (
-              <Link
+            {links.map((link) => {
+              const Item = link.href.includes('#') ? HashLink : Link
+              return (
+              <Item
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="border-b border-line/70 py-4 font-display text-2xl tracking-tight last:border-0"
               >
                 {link.label}
-              </Link>
-            ))}
+              </Item>
+              )
+            })}
           </div>
         </div>
       )}

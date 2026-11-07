@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import HashLink from './HashLink'
 import {
   AiOutlineFacebook,
   AiOutlineInstagram,
@@ -52,9 +53,9 @@ export default function Footer() {
               </h3>
               <ul className="mt-5 space-y-3 text-sm">
                 <li>
-                  <Link href="/#about" className="link-wipe text-ink-soft hover:text-ink">
+                  <HashLink href="/#about" className="link-wipe text-ink-soft hover:text-ink">
                     About
-                  </Link>
+                  </HashLink>
                 </li>
                 <li>
                   <Link href="/events" className="link-wipe text-ink-soft hover:text-ink">
@@ -70,9 +71,9 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#support" className="link-wipe text-ink-soft hover:text-ink">
+                  <HashLink href="/#support" className="link-wipe text-ink-soft hover:text-ink">
                     Support the retreat
-                  </Link>
+                  </HashLink>
                 </li>
               </ul>
             </div>
